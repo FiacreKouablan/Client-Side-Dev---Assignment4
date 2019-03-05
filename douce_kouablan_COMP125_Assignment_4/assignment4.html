@@ -1,0 +1,152 @@
+<!-- Name: Demario Douce -->
+<!-- ID Number: 301021637 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Registration Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  <script src="validateform.js"></script>  -->
+</head>
+<body>
+
+<div class="row">
+
+    <img src="cover.jpg" alt="Image taken from setaswall.com">
+<h1>APPLY ONLINE</h1>  
+
+<p>Ready to take the next step towards achieving your goals? Please fill out the application below and we will contact you about the next steps in your admissions process.</p>
+
+<form name="form" method="post" onsubmit="return ValidateForm()" action="result.html">
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="fname">First Name</label<br>
+<input type="text" name="fname" id="FirstName" required="required">
+<span id="NameFirst" class="error"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="lname">Last Name</label><br>
+<input type="text" name="lname" id="LastName" required="required">
+<span id="NameLast" class="error"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="gender">Gender</label><br>
+<input type="text" name="gender" required="required">
+<span id="GenderId" class="error"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="streetaddress">Street Address</label><br>
+<input type="text" name="streetaddress" required="required">
+<span id="AddressStreet" class="error"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="country">Country</label><br>
+<input type="text" name="country" required="required">
+<span id="CountryId" class="error"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="pcode">Postal Code</label><br>
+<input type="text" name="pcode" required="required">
+<span id="CodePostal" class="error"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="password">Password</label><br>
+<input type="password" name="password" required="required">
+<span id="PasswordId"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="cpassword">Confirm Password</label><br>
+<input type="password" name="cpassword" required="required">
+<span id="PasswordConfirm"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="city">City</label><br>
+<input type="text" name="city" required="required">
+<span id="Cities"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="province">Province</label><br>
+<input type="text" name="province" required="required">
+<span id="provinces"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="email">Email</label><br>
+<input type="email" name="email" required="required">
+<span id="EmailIds"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="pnumber">Phone Number</label><br>
+<input type="tel" name="pnumber" required="required" id="NumberPhone">
+<span ></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="education">Level of Previous Education</label><br>
+<input type="text" name="education" required="required">
+<span id="PreviousEducation"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="working">Are you Currently Working?</label>
+<br>
+<select name="selworking" required="required">
+<option value="yes">Yes</option>
+<option value="no">No</option>     
+</select>
+<span id="WorkingCurrently"></span>
+</div>
+
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="campus">Preferred Campus</label><br>
+<input type="text" name="campus" required="required">
+<span id="CampusPreferred"></span>
+</div>
+
+<div class="col">
+        <i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="program">Program of Interest</label><br>
+<input type="text" name="program" required="required">
+<span id="ProgramOfInterest"></span>
+</div>
+
+<div class="col">
+<i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> <label for="aboutus">How Did you Hear About Us?</label>
+<br>
+<select name="selaboutus">
+<option value="Careerfair">Career Fair</option> 
+<option value="EmploymentService">Employment Service</option> 
+<option value="Internet">Internet</option>   
+<option value="Friend">Friend</option>
+</select>
+<span id="FairCareer"></span>
+</div>
+
+<p style="color:#f6f6f6;">empty space</p>
+<br>
+<br>
+<p><i class="fa fa-asterisk" style="font-size:10px;color:red;"></i> REQUIRED FIELDS</p>
+
+
+<input type="submit" value="APPLY" name="Submit">
+
+
+</div>
+</form>    
+<script src="validateForm.js"></script>
+</body>
+</html>
